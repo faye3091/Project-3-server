@@ -1,6 +1,6 @@
 const { Schema } = require('mongoose');
 
-const movieSchema = new Schema({
+const Movie = new Schema({
   movieId: {
     type: String,
     required: true,
@@ -16,4 +16,4 @@ const movieSchema = new Schema({
   }
 });
 
-module.exports = movieSchema;
+module.exports = Movie;
