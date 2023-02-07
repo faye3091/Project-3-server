@@ -6,7 +6,7 @@
 // })
 
 // app.listen(PORT, () => console.log(`express listening on port ${PORT}`));
-import cors from 'cors';
+const cors = require("cors");
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
