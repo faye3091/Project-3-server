@@ -6,7 +6,7 @@
 // })
 
 // app.listen(PORT, () => console.log(`express listening on port ${PORT}`));
-
+import cors from 'cors';
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
@@ -24,7 +24,7 @@ const server = new ApolloServer({
 });
 
 app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+app.use(express.json(), cors());
 
 
 // Create a new instance of an Apollo server with the GraphQL schema
